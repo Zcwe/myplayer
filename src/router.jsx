@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider, Outlet, Link } from 'react-router-dom';
+import { createHashRouter, RouterProvider, Outlet, Link } from 'react-router-dom'; // 改1处：createBrowserRouter → createHashRouter
 import MusicPlayer from './MusicPlayer';
 import { Layout, Menu } from 'antd';
 import { AudioOutlined, InfoCircleOutlined } from '@ant-design/icons';
@@ -34,8 +34,8 @@ const RootLayout = () => {
     );
 };
 
-// 配置路由表
-const router = createBrowserRouter([
+// 配置路由表  改2处：createBrowserRouter → createHashRouter
+const router = createHashRouter([
     {
         path: '/',
         element: <RootLayout />,

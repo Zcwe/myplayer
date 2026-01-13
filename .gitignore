@@ -1,0 +1,26 @@
+# 依赖包（重中之重，必须忽略）
+node_modules/
+
+# 编辑器配置文件（IDE自动生成，无用）
+.idea/
+*.iml
+
+# 打包产物（npm run build生成，可重新构建）
+build/
+dist/
+
+# 环境变量文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 系统缓存文件
+.DS_Store
+Thumbs.db
